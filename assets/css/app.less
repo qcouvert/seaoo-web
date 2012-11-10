@@ -5,6 +5,24 @@
  * Construit lors de l'événement Hackons la corruption par @j15e, @JeanSebTr, @phildionne, @alain_gilbert, 
  */
 
+
+@import 'bootstrap/variables.less';
+@import 'bootstrap/mixins.less';
+
+// Mixins
+// --------------------------------------------------
+
+#type {
+	.h1() { font-size: @baseFontSize * 2.75; } // ~38px
+	.h2() { font-size: @baseFontSize * 2.25; } // ~32px
+	.h3() { font-size: @baseFontSize * 1.75; } // ~24px
+	.h4() { font-size: @baseFontSize * 1.25; } // ~18px
+	.h5() { font-size: @baseFontSize; }
+	.h6() { font-size: @baseFontSize * 0.85; } // ~12px
+}
+
+
+
 // General
 // --------------------------------------------------
 
@@ -20,12 +38,50 @@
 // Scaffolding
 // --------------------------------------------------
 
+#header {
+	padding: @gridGutterWidth/2 0;
+	background-color: @grayLighter;
+	#site-name {
+		#type > .h4();
+		margin: 0;
+	}
+	#tagline {
+		#type > .h6();
+		margin: 0;
+	}
+}
+#wrap {
+	margin: @gridGutterWidth*2 0;
+}
+#footer {
+	padding: @gridGutterWidth*2 0;
+	background-color: @grayLighter;
+}
 
 
+// Sections
+// --------------------------------------------------
 
+#project-description {
+	padding: @gridGutterWidth 0;
 
+}
 
+#feed-filter {
+	#filter-rules {
+		.rule {
+			margin-bottom: @gridGutterWidth;
+			padding: @gridGutterWidth 0;
+			border-bottom: 1px solid @grayLighter;
+		}
+	}
+}
 
+#subscriber {
+	.sentence-element {
+		display: inline-block;
+	}
+}
 
 
 
