@@ -4,3 +4,60 @@
  *
  * Construit lors de l'événement Hackons la corruption par @j15e, @JeanSebTr, @phildionne, @alain_gilbert, 
  */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#header {
+  padding: 10px 0;
+  background-color: #eeeeee;
+}
+#header #site-name {
+  font-size: 17.5px;
+  margin: 0;
+}
+#header #tagline {
+  font-size: 11.9px;
+  margin: 0;
+}
+#wrap {
+  margin: 40px 0;
+}
+#footer {
+  padding: 40px 0;
+  background-color: #eeeeee;
+}
+#project-description {
+  padding: 20px 0;
+}
+#feed-filter #filter-rules .rule {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+#subscriber .sentence-element {
+  display: inline-block;
+}
