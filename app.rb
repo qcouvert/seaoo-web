@@ -2,7 +2,7 @@ require 'sinatra'
 require 'less'
 require 'sinatra/assetpack'
 
-class Seaoo < Sinatra::Base
+class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
   register Sinatra::AssetPack
 
