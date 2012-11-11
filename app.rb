@@ -39,6 +39,12 @@ class App < Sinatra::Base
     erb :index
   end
 
+  get '/rss' do
+    @notices = Notice.all
+    content_type 'application/rss+xml'
+    erb :rss
+  end
+
   get '/favicon.ico' do
     nil
   end
