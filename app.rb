@@ -59,6 +59,4 @@ class App < Sinatra::Base
   get '/favicon.ico' do
     nil
   end
-
-  run! if app_file == $0
 end

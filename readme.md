@@ -7,7 +7,7 @@ Stay informed when new tenders are published on [seao.ca](http://seao.ca/)
 ### Getting started
 
     bundle install
-    ruby app.rb
+    rackup
 
 ### Deploying
 
