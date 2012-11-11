@@ -11,6 +11,7 @@
 
     <% @notices.each do |notice| %>
     <item>
+      <guid><%= notice.itemId %></guid>
       <pubDate><%= notice.dateRfc %></pubDate>
       <title><%= notice.Title %></title>
       <link><%= notice.url %></link>
