@@ -24,16 +24,25 @@
         </div>
 
         <div class="span3">
-          <select name="filters[][type]" class="span3">
-            <option value="include">Inclure</option>
-            <option value="exclude">Exclure</option>
-          </select>
+          <p>Incluant</p>
         </div>
 
         <div class="span4">
-          <input name="filters[][keyword]" class="span4" type="text" placeholder="Mot-clés (ex: imprimantes, serveurs, switch)">
+          <input name="filters[][include]" class="span4" type="text" placeholder="Mot-clés (ex: imprimantes, serveurs, switch)">
         </div>
-      </div>
+      </div><!-- /.row -->
+
+      <hr class="invisible">
+
+      <div class="row">
+        <div class="span3 offset5">
+          <p>Excluant</p>
+        </div>
+
+        <div class="span4">
+          <input name="filters[][exlcude]" class="span4" type="text" placeholder="Mot-clés (ex: aqueduc, toiture, bâtiment)">
+        </div>
+      </div><!-- /.row -->
     </article>
 
     <div class="row">
