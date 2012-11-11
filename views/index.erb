@@ -1,7 +1,7 @@
 <section id="project-description">
   <div class="row">
     <div class="span6 offset3">
-      <h3>Soyez informé lorsque de nouveaux appels d'offres sont publiés sur seao.ca</h3>
+      <h3>Soyez automatiquement informé lorsque de nouveaux appels d'offres sont publiés sur <a target="_blank" href="https://seao.ca/">seao.ca</a></h3>
     </div>
   </div>
 </section><!-- /#project-description -->
@@ -9,10 +9,9 @@
 <hr>
 
 <% @categories.each do |cat| %>
-  <%= cat.name %><br/>
+  <%= #cat.name 
+  %>
 <% end %>
-
-<hr>
 
 <section id="feed-filter">
 
@@ -33,8 +32,8 @@
 
         <div class="span2">
           <select class="span2">
-            <option>Contient:</option>
-            <option>Ne contient pas:</option>
+            <option>Qui contient...</option>
+            <option>Qui ne contient pas...</option>
           </select>
         </div>
 
@@ -51,7 +50,7 @@
       </div>
       <div class="row">
         <div class="span2 offset10">
-          <a href="" class="btn btn-small pull-right">Ajouter un mot-clé</a>
+          <a href="" class="btn btn-small pull-right">Ajouter un critère</a>
         </div>
       </div>
     </article>
@@ -72,12 +71,12 @@
           </div>
         </div>
       </div>
-      <p>chaque fois qu'un nouvel appel d'offres correspondra aux critères sélectionés.</p>
-      <a href="" class="btn btn-primary">Envoyer</a>
+      <p>chaque fois qu'un nouvel appel d'offres correspondra aux critères sélectionnés.</p>
+      <a href="" class="btn btn-primary">Confirmer</a>
     </div>
 
     <div class="span6">
-      <p>S'abbonner au flux RSS</p>
+      <p>S'abonner via un flux RSS</p>
       <code>http://www.seaoo.ca?categorie&contient=tag1&tag2&tag3</code>
     </div>
   </div>
