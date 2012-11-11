@@ -4,7 +4,8 @@ $(function(){
     form.change(updateRssLink)
   }
 
-  $('#add-category').click(function (){
+  $('#add-category').click(function (e){
+    e.preventDefault()
     $('article.rule').clone().appendTo($('#filter-rules'));
   });
 })
