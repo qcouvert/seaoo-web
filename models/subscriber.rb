@@ -1,6 +1,6 @@
 class Subscriber
   include Mongoid::Document
-  store_in session: "default"
+  store_in session: "seaoo_scraper"
 
   field :email, type: String
   field :filters, type: Array, default: []
