@@ -9,11 +9,15 @@ class Notice
     filters_params.each do |f|
       inclu = f['include'].split()
       exclu = f['exclude'].split()
-      filters << Notice.all.in(categories: f['category']).in(tags: inclu).and.nin(tags: exclu)
+      conditions = { categories: f['category'] }
+      conditions[:tags.in] = inclu if inclu
+      conditions[:tags.nin] = exclu if exclu
+      filters << conditions
     end
-    Notice.all.or(filters)
+    Notice.any_of(filters)
+  end
 
   def dateRfc
-  	Date.parse(information["PublicationDate"]).httpdate
+    Date.parse(information["PublicationDate"]).httpdate
   end
 end
