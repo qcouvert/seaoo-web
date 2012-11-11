@@ -1,3 +1,5 @@
+require 'date'
+
 class Notice
   include Mongoid::Document
   store_in session: "seaoo_scraper"
@@ -10,5 +12,8 @@ class Notice
       filters << Notice.all.in(categories: f['category']).in(tags: inclu).and.nin(tags: exclu)
     end
     Notice.all.or(filters)
+
+  def dateRfc
+  	Date.parse(information["PublicationDate"]).httpdate
   end
 end
