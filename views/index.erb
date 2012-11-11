@@ -16,30 +16,31 @@
     <article class="rule">
       <div class="row">
         <div class="span5">
-          <select class="span5">
+          <select name="filters[][category]" class="span5">
             <% @categories.each do |cat| %>
-              <%= '<option>' + cat.name + '</option' %>
+              <%= '<option>' + cat.name + '</option>' %>
             <% end %>
           </select>
         </div>
 
         <div class="span3">
-          <select class="span3">
+          <select name="filters[][type]" class="span3">
             <option>Qui contient...</option>
             <option>Qui ne contient pas...</option>
           </select>
         </div>
 
         <div class="span4">
-          <input class="span4" type="text" placeholder="Mot-clé">
-        </div>
-      </div>
-      <div class="row">
-        <div class="span2 offset10">
-          <a href="" class="btn btn-small pull-right">Ajouter un critère</a>
+          <input name="filters[][keyword]" class="span4" type="text" placeholder="Mot-clé">
         </div>
       </div>
     </article>
+
+    <div class="row">
+      <div class="span2 offset10">
+        <a href="" class="btn btn-small pull-right">Ajouter un critère</a>
+      </div>
+    </div>
 
   </section><!-- /#filter-rules -->
   
