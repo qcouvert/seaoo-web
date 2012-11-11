@@ -42,7 +42,7 @@ class App < Sinatra::Base
   get '/rss' do
     @notices = Notice.all
     content_type 'application/rss+xml'
-    erb :rss
+    erb :rss, layout: false
   end
 
   post '/subscribe' do
