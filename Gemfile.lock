@@ -48,6 +48,7 @@ PLATFORMS
 DEPENDENCIES
   less
   mongoid
+  rack
   rake
   sinatra
   sinatra-assetpack
