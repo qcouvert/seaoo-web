@@ -8,6 +8,6 @@ class Subscriber
   validates :email, presence: true
 
   def unsubscribe_url
-    "http://seao.ca/unsubscribe/#{id}"
+    "http://seaoo.ca/unsubscribe/#{id}"
   end
 end
