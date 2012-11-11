@@ -10,7 +10,7 @@
 
     <% @notices.each do |notice| %>
     <item>
-      <pubDate><%= notice.information[:PublicationDate] %></pubDate>
+      <pubDate><%= notice.information["PublicationDate"] %></pubDate>
       <title><%= notice.Title %></title>
       <link><%= notice.url %></link>
       <description><%= notice.Status %></description>
