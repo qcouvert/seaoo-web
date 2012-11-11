@@ -3,6 +3,10 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])
 Bundler.require
 
+Dir["models/*.rb"].each {|file| require File.expand_path('../'+file, __FILE__) }
+
+Mongoid.load!('config/mongoid.yml')
+
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
   register Sinatra::AssetPack
@@ -30,7 +34,8 @@ class App < Sinatra::Base
   }
 
   get '/' do
-      erb :index
+    @categories = Category.all
+    erb :index
   end
 
   get '/favicon.ico' do

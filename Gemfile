@@ -6,3 +6,4 @@ gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 gem "rake"
 gem "less"
 gem "therubyracer"
+gem "mongoid"
