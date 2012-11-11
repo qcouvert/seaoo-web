@@ -3,6 +3,10 @@ $(function(){
   if(form.length) {
     form.change(updateRssLink)
   }
+
+  $('#add-category').click(function (){
+    $('article.rule').clone().appendTo($('#filter-rules'));
+  });
 })
 
 function updateRssLink() {
