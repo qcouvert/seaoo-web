@@ -40,7 +40,7 @@ class App < Sinatra::Base
   end
 
   get '/rss' do
-    @notices = Notice.all
+    @notices = Notice.filters(params[:filters])
     content_type 'application/rss+xml'
     erb :rss, layout: false
   end
