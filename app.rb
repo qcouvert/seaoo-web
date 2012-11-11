@@ -45,6 +45,11 @@ class App < Sinatra::Base
     erb :rss
   end
 
+  post '/subscribe' do
+    @subscriber = Subscriber.create(email: params[:email], filters: params[:filters])
+    erb :subscribe
+  end
+
   get '/favicon.ico' do
     nil
   end

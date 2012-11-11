@@ -1,0 +1,9 @@
+<% if @subscriber.errors.messages.empty? %>
+  <h2>Vous êtes maintenant abonné!</h2>
+  <p>Abonnement #<%= @subscriber.id %></p>
+<% else %>
+  <h2>Oups, il y a eu une erreur.</h2>
+  <% @subscriber.errors.each do |error| %>
+  <p><%= error %> incorrect!</p>
+  <% end %>
+<% end %>
