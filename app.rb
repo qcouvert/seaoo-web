@@ -50,6 +50,12 @@ class App < Sinatra::Base
     erb :subscribe
   end
 
+  get '/unsubscribe/:id' do
+    @subscriber = Subscriber.where(id: params[:id]).first
+    @subscriber.delete if @subscriber
+    erb :unsubscribe
+  end
+
   get '/favicon.ico' do
     nil
   end

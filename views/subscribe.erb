@@ -1,6 +1,7 @@
 <% if @subscriber.errors.messages.empty? %>
   <h2>Vous êtes maintenant abonné!</h2>
-  <p>Abonnement #<%= @subscriber.id %></p>
+  <p>Pour vous désabonner en tout temps, vous pouvez utiliser ce lien qui se trouvera également dans les courriels que vous recevrez :</p>
+  <p><code><%= @subscriber.unsubscribe_url %></code></p>
 <% else %>
   <h2>Oups, il y a eu une erreur.</h2>
   <% @subscriber.errors.each do |error| %>

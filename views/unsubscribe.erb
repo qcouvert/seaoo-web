@@ -1,0 +1,7 @@
+<% if @subscriber %>
+  <h2>Vous êtes maintenant désabonné!</h2>
+  <p>Abonnement <code><%= @subscriber.id %></code> supprimé.</p>
+<% else %>
+  <h2>Abonnement introubable.</h2>
+  <p>L'abonnement <code><%= params[:id] %></code> déjà supprimé ou inexistant.</p>
+<% end %>
