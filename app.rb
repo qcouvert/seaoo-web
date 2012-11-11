@@ -41,6 +41,7 @@ class App < Sinatra::Base
 
   get '/rss' do
     @notices = Notice.filters(params[:filters])
+    @permalink = request.url
     content_type 'application/rss+xml'
     erb :rss, layout: false
   end

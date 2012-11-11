@@ -4,9 +4,10 @@
   <channel>
 
     <title>SEAOO</title>
-    <link>http://www.seaoo.ca</link>
+    <link>http://seaoo.ca</link>
     <language>fr-CA</language>
     <description>Soyez automatiquement informé lorsque de nouveaux appels d'offres sont publiés sur seao.ca</description>
+    <atom:link href="<%= @permalink %>" rel="self" type="application/rss+xml" />
 
     <% @notices.each do |notice| %>
     <item>
