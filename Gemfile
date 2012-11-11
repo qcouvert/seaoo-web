@@ -12,3 +12,4 @@ gem "rack"
 gem "thin"
 gem "sinatra"
 gem "foreman"
+gem "therubyracer-heroku", "0.8.1.pre3", :require => false
