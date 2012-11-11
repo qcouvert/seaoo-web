@@ -4,3 +4,9 @@
 
     bundle install
     ruby app.rb
+
+### Deploying
+
+    git push heroku
+
+Good day.
