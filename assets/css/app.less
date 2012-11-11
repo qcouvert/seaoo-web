@@ -46,15 +46,16 @@ hr.thin {
 	background-color: @grayLighter;
 	#site-name {
 		#type > .h4();
-		margin: 0;
+		margin: @gridGutterWidth 0 @gridGutterWidth/2 0;
 	}
 	#tagline {
 		#type > .h6();
 		margin: 0;
+		color: #777;
 	}
 }
 #wrap {
-	margin: @gridGutterWidth*2 0;
+	margin: 0 0 @gridGutterWidth*2 0;
 }
 #footer {
 	padding: @gridGutterWidth*2 0;
@@ -66,7 +67,8 @@ hr.thin {
 // --------------------------------------------------
 
 #project-description {
-	padding: @gridGutterWidth 0;
+  background-image: url("../img/background.jpg");
+	padding: 44px 0;
 
 }
 
