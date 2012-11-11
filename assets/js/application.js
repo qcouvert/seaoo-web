@@ -12,6 +12,6 @@ $(function(){
 
 function updateRssLink() {
   $('#email').attr('disabled', 'disabled')
-  $('#rss-path').attr('value', 'http://www.seaoo.ca/rss?'+$('#subscribe-form').serialize())
+  $('#rss-path').attr('value', 'http://seaoo.ca/rss?'+$('#subscribe-form').serialize())
   $('#email').attr('disabled', false)
 }
