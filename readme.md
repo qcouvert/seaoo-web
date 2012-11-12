@@ -13,7 +13,7 @@ Stay informed when new tenders are published on [seao.ca](http://seao.ca/)
 
     git push heroku
 
-Good day.
+[Good day](http://www.youtube.com/watch?v=MuNvxH5kSKU).
 
 ---
 
