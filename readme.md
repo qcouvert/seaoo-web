@@ -1,8 +1,6 @@
 ## Front-End app for SEAO Open
 
-Stay informed when new tenders are published on [seao.ca](http://seao.ca/)
-
-[http://seaoo.ca/](http://seaoo.ca/)
+Stay informed when new tenders are published on [seao.ca](http://seao.ca/) with [seaoo.ca](http://seaoo.ca/)
 
 ### Getting started
 
