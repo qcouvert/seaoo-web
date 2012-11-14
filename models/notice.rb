@@ -14,7 +14,7 @@ class Notice
       conditions[:tags.nin] = exclu if exclu
       filters << conditions
     end
-    Notice.any_of(filters)
+    Notice.where(complete: true).any_of(filters)
   end
 
   def dateRfc
