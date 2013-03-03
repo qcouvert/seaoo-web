@@ -5,7 +5,7 @@ Stay informed when new tenders are published on [seao.ca](http://seao.ca/) with 
 ### Getting started
 
     bundle install
-    rackup
+    foreman start
 
 ### Deploying
 

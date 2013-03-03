@@ -1,15 +1,17 @@
 development:
   sessions:
     default:
-      database: seaoo_web
+      database: <%= ENV['MG_DB'] %>
       hosts: 
-        - localhost:27017
+        - <%= ENV['MG_HOST_1'] %>
+      username: <%= ENV['MG_USERNAME'] %>
+      password: <%= ENV['MG_PASSWORD'] %>
     seaoo_scraper:
-      database: seaoo
+      database: <%= ENV['MG_DB_SC'] %>
       hosts: 
-        - ds041347.mongolab.com:41347
-      username: ouvert
-      password: Sch39YctLD7n
+        - <%= ENV['MG_HOST_1_SC'] %>
+      username: <%= ENV['MG_USERNAME_SC'] %>
+      password: <%= ENV['MG_PASSWORD_SC'] %>
 
 production:
   sessions:
